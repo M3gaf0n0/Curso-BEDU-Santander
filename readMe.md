@@ -6,13 +6,13 @@ git init
 
 git add .
 
-*Así se agregan todos los archivos modificados*
+_Así se agregan todos los archivos modificados_
 
 ## Crear commit con descripcion
 
 git commit -m "MENSAJE"
 
-## Agregar remoto *solo la primera vez*
+## Agregar remoto _solo la primera vez_
 
 git remote add origin url
 
