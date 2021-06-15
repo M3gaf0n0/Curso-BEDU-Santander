@@ -12,7 +12,7 @@ git add .
 
 git commit -m "MENSAJE"
 
-## Agregar remoto __solo la primera vez__
+## Agregar remoto *solo la primera vez*
 
 git remote add origin url
 
