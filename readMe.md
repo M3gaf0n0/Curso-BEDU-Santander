@@ -1,11 +1,21 @@
-//Iniciar proyecto de git//
+## Iniciar proyecto de git
+
 git init
-//Preparar archivos para commit//
+
+## Preparar archivos para commit
+
 git add .
-Así se agregan todos los archivos modificados
-//Crear commit con descripcion//
+
+*Así se agregan todos los archivos modificados*
+
+## Crear commit con descripcion
+
 git commit -m "MENSAJE"
-//Agregar remoto la primera vez//
+
+## Agregar remoto __solo la primera vez__
+
 git remote add origin url
-//Enviar commit al servidor//
+
+## Enviar commit al servidor
+
 git push -u origin branch
