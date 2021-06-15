@@ -19,4 +19,5 @@ form button {
 body {
   background-color: #fffbf7;
   background-image: url(https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+  /*El background que va a aparecer es el segundo por el efecto cascada, siempre aparece el ultimo estilo de la hoja*/
 }
