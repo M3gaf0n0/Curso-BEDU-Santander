@@ -1,19 +1,11 @@
 h1 {
-  color: rgba(47, 47, 201, 0.562);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-h2 {
   color: #46484c;
+  text-align: center;
 }
 
-p b {
-  color: #6e6427cc;
-}
-
-form button {
-  color: #fff;
-  background-color: #025157;
+p {
+  color: #8b8b8bcc;
+  font: verdana;
 }
 
 body {
