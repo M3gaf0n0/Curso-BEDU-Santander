@@ -10,7 +10,7 @@ p {
 
 body {
   background-color: #fffbf7;
-  background-image: url(https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+  /*background-image: url(https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);*/
   /*El background que va a aparecer es el segundo por el efecto cascada, siempre aparece el ultimo estilo de la hoja*/
 }
 
@@ -20,9 +20,8 @@ button {
 }
 
 .header {
-  margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 40px 20px 0 20px;
+  font-size: 0;
 }
 
 li {
@@ -31,8 +30,24 @@ li {
 
 .header > * {
   display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+  height: 100%;
+  line-height: 45px;
 }
 
 .logo {
   width: 15%;
+}
+
+.navbar {
+  width: 70%;
+  text-align: center;
+  color: green;
+}
+
+.actions {
+  width: 15%;
+  text-align: right;
+  font-size: 14px;
 }
