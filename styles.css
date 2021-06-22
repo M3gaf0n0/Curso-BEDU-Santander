@@ -28,6 +28,39 @@ button {
 }
 
 .header {
+  margin: 15px 20px 0 20px;
+  font-size: 0;
+}
+h1 {
+  color: #46484c;
+  text-align: center;
+}
+
+p {
+  color: #8b8b8bcc;
+  font: verdana;
+}
+
+body {
+  background-color: #fffbf7;
+  /*background-image: url(https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);*/
+  /*El background que va a aparecer es el segundo por el efecto cascada, siempre aparece el ultimo estilo de la hoja*/
+}
+
+button {
+  color: #fff;
+  background-color: #025157;
+}
+
+.fixedHeader {
+  position: fixed;
+  background-color: #fffbf7;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header {
   margin: 40px 20px 0 20px;
   font-size: 0;
 }
