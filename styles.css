@@ -19,6 +19,14 @@ button {
   background-color: #025157;
 }
 
+.fixedHeader {
+  position: fixed;
+  background-color: #fffbf7;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .header {
   margin: 40px 20px 0 20px;
   font-size: 0;
@@ -69,4 +77,53 @@ li {
   padding: 12px 14px 12px 14px;
   border: none;
   border-radius: 5px;
+}
+
+.promo {
+  display: flex;
+  width: 70%;
+  margin: 100px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.freeTrial {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.explainVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.promo h3 {
+  font-family: serif;
+  color: #025157;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.promo form p {
+  color: #025157;
+}
+
+.promo p {
+  color: #343434;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.freeTrial form div {
+  justify-content: center;
+}
+
+.explainVideo img {
+  width: 120px;
+  margin-top: 10px;
 }
