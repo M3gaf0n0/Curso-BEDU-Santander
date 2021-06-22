@@ -1,11 +1,7 @@
-h1 {
-  color: #46484c;
-  text-align: center;
-}
-
-p {
-  color: #8b8b8bcc;
-  font: verdana;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,9 +10,153 @@ body {
   /*El background que va a aparecer es el segundo por el efecto cascada, siempre aparece el ultimo estilo de la hoja*/
 }
 
+.navbar {
+  width: 65%;
+  text-align: center;
+  color: #025157;
+  vertical-align: middle;
+}
+
+.actions {
+  text-align: right;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.actions > * {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.actions a {
+  color: #67b54b;
+}
+
+.actions button {
+  color: #fff;
+  background-color: #67b54b;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 0;
+  border-radius: 5px;
+}
+
+main {
+  margin-top: 285px;
+  text-align: center;
+}
+
+h1 {
+  color: #025157;
+  font-family: "Alegreya", serif;
+  font-size: 60px;
+  margin-bottom: 24px;
+}
+
+h4 {
+  color: #46484c;
+  font-family: "Slabo 27px", serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #8b8b8bcc;
+  margin-top: 15px;
+  font-family: sans-serif;
+}
+
+form {
+  height: 55px;
+}
+
+main div form {
+  padding: 20px;
+  height: fit-content;
+}
+
+input,
+button {
+  height: 100%;
+  border-radius: 8px;
+}
+
+input {
+  border: 1px solid #b6b6b6;
+  padding: 6px 20px;
+  width: 60%;
+  max-width: 250px;
+}
+
 button {
   color: #fff;
   background-color: #025157;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 6px 20px;
+  margin-left: -10px;
+}
+
+main div form label {
+  font-family: sans-serif;
+}
+
+main div form button {
+  border-radius: 10px;
+}
+
+figure {
+  margin-top: 32px;
+}
+
+.promo {
+  display: flex;
+  max-width: 70%;
+  margin: 100px auto;
+  align-items: center;
+}
+
+.explainVideo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explainVideo img {
+  width: 120px;
+  margin-top: 10px;
+}
+
+.freeTrial {
+  flex: 1;
+}
+
+.freeTrial h3 {
+  font-family: "Alegreya", serif;
+  font-size: 40px;
+  line-height: 48px;
+  color: #025157;
+}
+
+.freeTrial > p {
+  font-size: 16px;
+  color: #343434;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.freeTrial > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.freeTrial > form p {
+  color: #025157;
+  margin-bottom: 18px;
 }
 
 .fixedHeader {
@@ -29,39 +169,6 @@ button {
 
 .header {
   margin: 15px 20px 0 20px;
-  font-size: 0;
-}
-h1 {
-  color: #46484c;
-  text-align: center;
-}
-
-p {
-  color: #8b8b8bcc;
-  font: verdana;
-}
-
-body {
-  background-color: #fffbf7;
-  /*background-image: url(https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);*/
-  /*El background que va a aparecer es el segundo por el efecto cascada, siempre aparece el ultimo estilo de la hoja*/
-}
-
-button {
-  color: #fff;
-  background-color: #025157;
-}
-
-.fixedHeader {
-  position: fixed;
-  background-color: #fffbf7;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.header {
-  margin: 40px 20px 0 20px;
   font-size: 0;
 }
 
@@ -79,84 +186,7 @@ button {
   height: 100%;
 }
 
-.navbar {
-  width: 65%;
-  text-align: center;
-  color: #025157;
-}
-
 li {
   display: inline;
   padding: 0 25px 0 25px;
-}
-
-.actions {
-  width: 20%;
-  text-align: right;
-  font-size: 14px;
-}
-
-.actions > * {
-  margin: 0 10px 0 10px;
-}
-
-.actions a {
-  color: #67b54b;
-}
-
-.actions button {
-  color: #fff;
-  background-color: #67b54b;
-  padding: 12px 14px 12px 14px;
-  border: none;
-  border-radius: 5px;
-}
-
-.promo {
-  display: flex;
-  width: 70%;
-  margin: 100px auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.freeTrial {
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-
-.explainVideo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.promo h3 {
-  font-family: serif;
-  color: #025157;
-  font-size: 40px;
-  line-height: 48px;
-}
-
-.promo form p {
-  color: #025157;
-}
-
-.promo p {
-  color: #343434;
-  font-family: Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.freeTrial form div {
-  justify-content: center;
-}
-
-.explainVideo img {
-  width: 120px;
-  margin-top: 10px;
 }

@@ -29,34 +29,40 @@
             </div>
         </header>
     </section>
+    <main>
+        <!-- Esto es lo que se verá en el navegador web -->
+        <h1>Build your blog. Build your business.</h1>
+        <h2>Headline 2</h2>
+        <h3>Headline 3</h3>
+        <h4>Headline 4</h4>
+        <h5>Headline 5</h5>
+        <h6>Headline 6</h6>
+        <p>Esto es un <b>bonito</b> parrafo</p>
 
-    <!-- Esto es lo que se verá en el navegador web -->
-    <h1>Build your blog. Build your business.</h1>
-    <h2>Headline 2</h2>
-    <h3>Headline 3</h3>
-    <h4>Headline 4</h4>
-    <h5>Headline 5</h5>
-    <h6>Headline 6</h6>
-    <p>Esto es un <b>bonito</b> parrafo</p>
-
-    <!-- <input type="text"><br><br> -->
-    <form action="">
-        <label for="name">Nombre:</label>
-        <!--El for nos esta relacionando el texto con la informacion que registro el usuario-->
-        <input type="text" id="name" name="userName" placeholder="Nombre" required /><br /><br />
-        <!--El placeholder pone el texto dentro del cuadro de input, el required no permite enviar el formulario a menos que sea llenado ese espacio-->
-        <label for="lastName">Apellido:</label>
-        <input type="text" id="lastName" name="userLastName" placeholder="Apellido" required /><br /><br />
-        <label for="age">Edad:</label>
-        <input type="number" id="age" name="userAge" placeholder="Edad" required /><br /><br />
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="userEmail" placeholder="E-mail" required /><br /><br />
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="userPassword" placeholder="Contraseña" required /><br /><br />
-        <button type="submit">Enviar &rarr;</button>
-    </form>
-    <br /><br />
-    <img src="capterra.png" alt="Logo capterra" />
+        <!-- <input type="text"><br><br> -->
+        <div>
+            <form>
+                <label for="name">Nombre:</label>
+                <!--El for nos esta relacionando el texto con la informacion que registro el usuario-->
+                <input type="text" id="name" name="userName" placeholder="Nombre" required /><br /><br />
+                <!--El placeholder pone el texto dentro del cuadro de input, el required no permite enviar el formulario a menos que sea llenado ese espacio-->
+                <label for="lastName">Apellido:</label>
+                <input type="text" id="lastName" name="userLastName" placeholder="Apellido" required /><br /><br />
+                <label for="age">Edad:</label>
+                <input type="number" id="age" name="userAge" placeholder="Edad" required /><br /><br />
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="userEmail" placeholder="E-mail" required /><br /><br />
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="userPassword" placeholder="Contraseña"
+                    required /><br /><br />
+                <button type="submit">Enviar &rarr;</button>
+            </form>
+        </div>
+        <br /><br />
+        <figure class="banner">
+            <img src="capterra.png" alt="Logo capterra" />
+        </figure>
+    </main>
     <section class="promo">
         <article class="explainVideo">
             <video controls
@@ -75,7 +81,8 @@
             <h3>Publish to your blog in minutes, not hours.</h3>
             <p>
                 Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have
-                hours to create content that may or may not work. With Matcha, instantly publish from our library of 10,000+
+                hours to create content that may or may not work. With Matcha, instantly publish from our library of
+                10,000+
                 professionally written articles and build your email list faster with our powerful conversion tool.
             </p>
             <form>
