@@ -1,7 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /*Este selector abarca todos los elementos del HTML */
+  margin: 0; /*Sin margen*/
+  padding: 0; /*Sin marco*/
+  box-sizing: border-box; /* Para cualquier elemento que se defina, todo marco o margen será agregado dentro del borde, y por lo tanto la caja de contenido se va a reducir para absorber el marco o el margen*/
 }
 
 body {
@@ -11,21 +12,21 @@ body {
 }
 
 .navbar {
-  width: 65%;
-  text-align: center;
-  color: #025157;
-  vertical-align: middle;
+  width: 65%; /*El ancho de este elemento será del 65% del tamaño total de la hoja*/
+  text-align: center; /*La alineación del texto en el eje horizontal*/
+  color: #025157; /*Color del texto dentro del elemento navbar*/
+  vertical-align: middle; /*La alineación deltexto en el eje vertical*/
 }
 
 .actions {
   text-align: right;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 600; /*Especifica el peso o el grueso de la letra*/
+  font-size: 14px; /*Especifica el tamaño de la letra, puede especificarse en pixeles, em o rem*/
 }
 
 .actions > * {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 10px; /*Especifica el margen derecho*/
+  margin-left: 10px; /*Especifica el margen izquierdo*/
 }
 
 .actions a {
@@ -34,25 +35,22 @@ body {
 
 .actions button {
   color: #fff;
-  background-color: #67b54b;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border: 0;
-  border-radius: 5px;
+  background-color: #67b54b; /*Especifica el color de fondo del elemento*/
+  padding-left: 12px 14px 12px 14px; /*Especifica el tamaño del marco en sentido de las agujas del reloj, iniciando por el marco superior*/
+  border: 0; /*Especifica que el elemento no debe tener bordes*/
+  border-radius: 5px; /*Especifica el tamaño del radio del borde*/
 }
 
 main {
-  margin-top: 285px;
+  margin-top: 285px; /*Especifica el tamaño del margen superior*/
   text-align: center;
 }
 
 h1 {
   color: #025157;
-  font-family: "Alegreya", serif;
+  font-family: "Alegreya", serif; /*Especifica la familia de fuentes que se aplicaran al texto del elemento*/
   font-size: 60px;
-  margin-bottom: 24px;
+  margin-bottom: 24px; /*Especifica el tamaño del margen inferior*/
 }
 
 h4 {
@@ -69,35 +67,35 @@ p {
 }
 
 form {
-  height: 55px;
+  height: 55px; /*Especifica la altura del contenido de un elemento. El area de contenido esta dentro del padding, borde y margen del elemento*/
 }
 
 main div form {
   padding: 20px;
-  height: fit-content;
+  height: fit-content; /*La altura del elemento es la mínima para que todo el contenido quepa en el elemento sin hacer overflow*/
 }
 
 input,
 button {
-  height: 100%;
+  height: 100%; /*La altura del elemento equivale al porcentaje escrito respecto al tamaño del elemento padre*/
   border-radius: 8px;
 }
 
 input {
-  border: 1px solid #b6b6b6;
-  padding: 6px 20px;
-  width: 60%;
-  max-width: 250px;
+  border: 1px solid #b6b6b6; /*El borde del elemento tendrá un grosor de un pixel, línea solida con ese color*/
+  padding: 6px 20px; /*El elemento tendrá un marco superior e inferior de 6px y marcos laterales de 20px*/
+  width: 60%; /*El ancho del elemento equivaldrá al 60% del ancho del elemento padre*/
+  max-width: 250px; /*Si el 60% del ancho del elemento padre supera los 250px, el elemento trndrá una anchura máxima de 250px*/
 }
 
 button {
   color: #fff;
   background-color: #025157;
   border: none;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 0; /*El borde izquierdo superior no tendra radio*/
+  border-bottom-left-radius: 0; /*El borde izquierdo inferior no tendra radio*/
   padding: 6px 20px;
-  margin-left: -10px;
+  margin-left: -10px; /*Como los valores son negativos, el elemento quedará encimado con el otro elemento con el que comparte linea*/
 }
 
 main div form label {
@@ -113,17 +111,18 @@ figure {
 }
 
 .promo {
-  display: flex;
+  display: flex; /*Indica que el elemento se mostrara como un elemento flexible*/
   max-width: 70%;
-  margin: 100px auto;
-  align-items: center;
+  margin: 100px auto; /*El elemento tendrá margen superior e inferior de 100px, mientras los margenes laterales seran calculados automaticamente por el navegador*/
+  align-items: center; /*Alinea los elementos en el eje secundario, en este caso, el eje vertical*/
 }
 
 .explainVideo {
-  flex: 1;
+  flex: 1; /*Define la habilidad del elemento para crecer en caso de ser necesario, como no tiene unidades el valor sirve como una proporcion. Dicta la cantidad de espacio disponible que el item puede tomar dentro del contenedor flex*/
+  /*Es una acotacion para flex-grow, flex-shrink y flex-basis. Como solo hay un valor, equivale a poner un valor de 0 a las ultimas 2 opciones por lo que el atajo calcula esos valores automáticamente*/
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /*Establece cual es el eje principal de elemento, como aqui se definio columna, el eje principal es el vertical*/
+  align-items: center; /*Alinea los elementos en el eje secundario, en este caso el eje horizontal*/
 }
 
 .explainVideo img {
@@ -138,7 +137,7 @@ figure {
 .freeTrial h3 {
   font-family: "Alegreya", serif;
   font-size: 40px;
-  line-height: 48px;
+  line-height: 48px; /*Establece la distancia entre las líneas de texto*/
   color: #025157;
 }
 
@@ -160,20 +159,21 @@ figure {
 }
 
 .fixedHeader {
-  position: fixed;
+  position: fixed; /*Establece como el elemento es posicionado dentro del documento. La posicion y las dimensiones son siempre relativas a su bloque contenedor inicial*/
   background-color: #fffbf7;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; /*Esto pega el elemento a la parte superior del documento*/
+  left: 0; /*Esto pega el elemento al margen izquierdo del documento*/
+  right: 0; /*Esto pega el elemento al margen derecho del documento*/
 }
 
 .header {
   margin: 15px 20px 0 20px;
-  font-size: 0;
+  font-size: 0; /*Esto ayuda a disminuir el espacio entre los elementos al convertir los espacios en 0*/
 }
 
 .header > * {
-  display: inline-block;
+  /*El selector aplica para todos los hijos del elemento header*/
+  display: inline-block; /*Define que si el elemento se presenta como inline o block. En este caso los elementos se presentan uno al lado del otro sin presentar el elemento <br> para crear la barra de navegacion*/
   font-size: 16px;
   vertical-align: middle;
   height: 100%;
@@ -187,7 +187,7 @@ figure {
 }
 
 li {
-  display: inline;
+  display: inline; /*Los elementos no generan un salto de linea y solo ocupan el ancho necesario para cada uno*/
   padding: 0 25px 0 25px;
 }
 
@@ -196,7 +196,7 @@ li {
   padding: 5% 15%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; /*Define la posicion del elemento con respecto al eje principal, el valor space around aplica el mismo espacio alrededor de cada elemento sin importar su ancho.*/
 }
 
 .caseStudies .overview {
@@ -215,7 +215,7 @@ li {
   color: #343434;
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /*La unidad rem se refiere al tamaño de fuente del elemento raiz, es decir el elemento HTML. Para conocer como la medida de un elemento de rem a px se multiplica por 0.0625*/
 }
 
 .caseStudies .overview button {
@@ -255,11 +255,11 @@ li {
 }
 
 .caseStudies .stories-carousel .card .card-media {
-  position: relative;
+  position: relative; /*El elemento se posiciona de acuerdo al flujo normal del documento, luego se desplaza en relacion a sí mismo basado en los valores top, right, bottom y left*/
 }
 
 .caseStudies .stories-carousel .card .card-media .company {
-  position: absolute;
+  position: absolute; /*EL elemento es removido del flujo normal del documento. Su posicion y dimensiones son relativas a su bloque contendor*/
   bottom: -20px;
   right: 20px;
   width: 100px;
@@ -286,7 +286,7 @@ li {
   font-weight: 600;
   line-height: 20px;
   margin-bottom: 12px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .caseStudies .stories-carousel .card .card-body h3 {
@@ -314,7 +314,7 @@ li {
 
 .caseStudies .stories-carousel .card .card-footer {
   margin-bottom: 20px;
-  background-color: unset;
+  background-color: unset; /*La keyword unset resetea la propiedad a su valor heredado si la propiedad se hereda de su padre o a su valor inicial si no*/
   border-top: unset;
 }
 
