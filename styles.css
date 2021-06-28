@@ -7,6 +7,7 @@
 
 body {
   background-color: #fffbf7;
+  font-family: 'Open Sans', sans-serif;
   /*background-image: url(https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);*/
   /*El background que va a aparecer es el segundo por el efecto cascada, siempre aparece el ultimo estilo de la hoja*/
 }
@@ -15,6 +16,7 @@ body {
   width: 65%; /*El ancho de este elemento será del 65% del tamaño total de la hoja*/
   text-align: center; /*La alineación del texto en el eje horizontal*/
   color: #025157; /*Color del texto dentro del elemento navbar*/
+  background-color: #fffbf7;
   vertical-align: middle; /*La alineación deltexto en el eje vertical*/
 }
 
