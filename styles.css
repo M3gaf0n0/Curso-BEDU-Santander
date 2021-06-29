@@ -511,11 +511,59 @@ li {
   .navbar, .actions {
     display: none;
   }
+
   main {
-    margin-top: 130px;
+    margin-top: 80px;
   }
+
   h1{
     font-size: 30px;
+  }
+
+  .banner > img {
+    width: 100%;
+  }
+
+  .main > form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main > form > div {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .main > form > div > input {
+    width: 65%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .explainVideo > video {
+    width: 100%;
+  }
+
+  .freeTrial {
+    margin-top: 10px;
+  }
+
+  .publish > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .feat-image {
+    display: none;
   }
 }
 /** dispositivos pequeños en vista landscape (horizontal) */
