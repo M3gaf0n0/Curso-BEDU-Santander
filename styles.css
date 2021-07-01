@@ -12,13 +12,13 @@ body {
   /*El background que va a aparecer es el segundo por el efecto cascada, siempre aparece el ultimo estilo de la hoja*/
 }
 
-.navbar {
+/*.navbar {
   width: 65%; /*El ancho de este elemento será del 65% del tamaño total de la hoja*/
-  text-align: center; /*La alineación del texto en el eje horizontal*/
-  color: #025157; /*Color del texto dentro del elemento navbar*/
-  background-color: #fffbf7;
+  /*text-align: center; /*La alineación del texto en el eje horizontal*/
+  /*color: #025157; /*Color del texto dentro del elemento navbar*/
+  /*background-color: #fffbf7;
   vertical-align: middle; /*La alineación deltexto en el eje vertical*/
-}
+/*}*/
 
 .actions {
   text-align: right;
@@ -70,6 +70,35 @@ p {
 
 form {
   height: 55px; /*Especifica la altura del contenido de un elemento. El area de contenido esta dentro del padding, borde y margen del elemento*/
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  justify-content: flex-start;
+}
+
+.form-group {
+  margin: 0 25px;
+  justify-self: center;
+  padding: 15px;
+  width: 30%;
+}
+
+.form-group label {
+  font-size: 16px;
+}
+
+.form-check {
+  margin: 0 25px;
+  justify-self: flex-start;
+  align-self: flex-start;
+  max-height: 25px;
+  padding: 15px;
+}
+.btn {
+  width: 30%;
+  align-self: center;
+  margin: 25px;
 }
 
 main div form {
@@ -508,9 +537,9 @@ li {
 
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-  .navbar, .actions {
+  /*.navbar, .actions {
     display: none;
-  }
+  }*/
 
   main {
     margin-top: 80px;
