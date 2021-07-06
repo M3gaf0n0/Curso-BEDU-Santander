@@ -1,0 +1,22 @@
+{
+  "name": "santanderfront",
+  "version": "1.0.0",
+  "description": "git init",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M3gaf0n0/Curso-BEDU-Santander.git"
+  },
+  "author": "Megan Valencia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M3gaf0n0/Curso-BEDU-Santander/issues"
+  },
+  "homepage": "https://github.com/M3gaf0n0/Curso-BEDU-Santander#readme",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
+}
