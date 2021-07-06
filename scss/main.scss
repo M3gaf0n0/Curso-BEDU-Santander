@@ -1,0 +1,130 @@
+/** main.scss */
+@use 'global' as *;
+
+.blog {
+  background-color: $white;
+  max-width: unset;
+  padding: 5% 10%;
+
+  .title {
+    @extend %base-title;
+  }
+
+  .process-list {
+    margin-top: 40px;
+    margin-bottom: 36px;
+
+    .process {
+      margin-bottom: 25px;
+
+      & > div {
+        & > h3 {
+          color: $dark-green-title;
+          margin-bottom: 0;
+          font-size: 30px;
+          font-weight: 500;
+        }
+        & > p {
+          color: $dark-green-text;
+          margin: 0;
+        }
+      }
+
+      .process-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        text-align: center;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  button {
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 12px;
+    width: 180px;
+    margin-bottom: 15px;
+  }
+
+  .container {
+    .row {
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    .col {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: $white;
+    background-clip: border-box;
+    border: 1px solid rgba($color: $gray, $alpha: 0.125);
+    border-radius: 0.25rem;
+
+    .card-body {
+      flex: 1 1 auto;
+      min-height: 1px;
+      padding: 1.25rem;
+    }
+    .metadata {
+      font-weight: 500;
+      font-size: 14px;
+      color: $light-gray;
+
+      .category {
+        color: $light-green;
+      }
+    }
+
+    .card-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: $gray;
+    }
+
+    .card-text {
+      color: $gray;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.5em;
+      min-height: 6em;
+    }
+
+    .author {
+        display: flex;
+    }
+
+    .author > img {
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      vertical-align: middle;
+    }
+
+    .author > p {
+        margin-left: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        color: $gray;
+        vertical-align: middle;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+/** fuentes */
+/** placeholders */
+.blog .title {
+  font-family: "Alegreya", serif;
+  color: #135359;
+}
+
+/** main.scss */
+.blog {
+  background-color: #ffffff;
+  max-width: unset;
+  padding: 5% 10%;
+}
+.blog .process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.blog .process-list .process {
+  margin-bottom: 25px;
+}
+.blog .process-list .process > div > h3 {
+  color: #025157;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.blog .process-list .process > div > p {
+  color: #135359;
+  margin: 0;
+}
+.blog .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.blog .process-list .process .process-icon img {
+  height: 100%;
+}
+.blog button {
+  height: auto;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  margin-bottom: 15px;
+}
+.blog .container .row {
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.blog .container .col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.blog .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 1px solid rgba(74, 74, 74, 0.125);
+  border-radius: 0.25rem;
+}
+.blog .card .card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+.blog .card .metadata {
+  font-weight: 500;
+  font-size: 14px;
+  color: #979797;
+}
+.blog .card .metadata .category {
+  color: #67b54b;
+}
+.blog .card .card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+.blog .card .card-text {
+  color: #4a4a4a;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5em;
+  min-height: 6em;
+}
+.blog .card .author {
+  display: flex;
+}
+.blog .card .author > img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+}
+.blog .card .author > p {
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4a4a4a;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=output.css.map */
